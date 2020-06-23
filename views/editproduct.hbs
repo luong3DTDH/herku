@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>toy-store-edit </title>
+    <style>
+        body {
+            background-image: url("https://i.ytimg.com/vi/Y55xTh4Dg98/maxresdefault.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        header {
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article {
+            float: center;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        nav {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>EDIT  INFORMATION</h1>
+    </header>
+    <article>
+        <table width=100% >
+    <form action="edit" method="POST">
+    <input type="hidden" name="id" value="{{product._id}}">
+    <tr>
+
+  
+    <td> Name :<input type="text" name="name" value="{{product.name}}"></td>
+    </tr>
+    <br>
+    <tr>
+         
+       <td> Type :<input type="text" name="type" id="" value="{{product.type}}"></td>
+    </tr>
+    <br>
+    <tr>
+     
+    
+   <td>Price : <input type="text" name="price" id="" value="{{product.price}}"></td>
+    </tr>
+    <td><input type="submit" value="Update"></td>
+    </form> 
+    </table>
+    </article>
+    <nav>
+        <h2>CONTACT US : GREENWICH UNIVERSITY</h2>
+    </nav>
+</body>
+
+</html>
